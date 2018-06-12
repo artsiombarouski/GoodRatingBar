@@ -1,0 +1,29 @@
+<resources>
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="CustomGoodRatingBarStyle">
+        <item name="grb_fill_color">@android:color/holo_orange_dark</item>
+        <item name="grb_empty_color">@android:color/darker_gray</item>
+        <item name="grb_indicator">@drawable/ic_rating_star</item>
+    </style>
+
+    <style name="AppTheme.CustomBar">
+        <item name="goodRatingBarStyle">@style/CustomGoodRatingBarStyle.AsAttr</item>
+        <item name="goodRatingBarStyleSmall">@style/CustomGoodRatingBarStyle.AsAttr.Small</item>
+    </style>
+
+    <style name="CustomGoodRatingBarStyle.AsAttr">
+        <item name="grb_fill_color">@android:color/holo_purple</item>
+    </style>
+
+    <style name="CustomGoodRatingBarStyle.AsAttr.Small">
+        <item name="grb_fill_color">@android:color/holo_red_light</item>
+        <item name="android:padding">8dp</item>
+    </style>
+
+</resources>

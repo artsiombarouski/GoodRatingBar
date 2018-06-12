@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <attr name="goodRatingBarStyle" format="reference" />
+    <attr name="goodRatingBarStyleSmall" format="reference" />
+
+    <declare-styleable name="GoodRatingBar">
+        <attr name="grb_indicator" format="reference" />
+        <attr name="grb_empty_color" format="reference|color" />
+        <attr name="grb_fill_color" format="reference|color" />
+        <attr name="grb_space" format="dimension" />
+        <attr name="grb_indicatorCount" format="integer" />
+        <attr name="grb_stepSize" format="float" />
+        <attr name="grb_isIndicator" format="boolean" />
+        <attr name="grb_colorResolver" format="string|reference" />
+    </declare-styleable>
+
+    <style name="DefaultGoodRatingBarStyle">
+        <item name="grb_space">0dp</item>
+        <item name="grb_indicator">@drawable/abc_ic_star_black_48dp</item>
+    </style>
+
+</resources>

@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        tools:context=".MainActivity">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Width: match_parent, Height: wrap_content)" />
+
+        <maestro123.good.ratingbar.GoodRatingBar
+            android:id="@+id/rating_bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Width: wrap_content, Height: wrap_content)" />
+
+        <maestro123.good.ratingbar.GoodRatingBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Width: wrap_content, Height: 20dp" />
+
+        <maestro123.good.ratingbar.GoodRatingBar
+            android:layout_width="wrap_content"
+            android:layout_height="20dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Width: 60dp, Height: wrap_content" />
+
+        <maestro123.good.ratingbar.GoodRatingBar
+            android:layout_width="60dp"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Width: wrap_content, Height: 30dp, Space: 16dp" />
+
+        <maestro123.good.ratingbar.GoodRatingBar
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            app:grb_space="16dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Width: wrap_content, Height: 30dp, Space: 8dp, Custom indicator" />
+
+        <maestro123.good.ratingbar.GoodRatingBar
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            app:grb_indicator="@drawable/ic_rating_star"
+            app:grb_space="8dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Width: wrap_content, Height: 30dp, Space: 8dp, Custom style" />
+
+        <maestro123.good.ratingbar.GoodRatingBar
+            style="@style/CustomGoodRatingBarStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            app:grb_space="8dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Width: wrap_content, Height: 30dp, Space: 8dp, Custom style, Step size: 0.1" />
+
+        <maestro123.good.ratingbar.GoodRatingBar
+            style="@style/CustomGoodRatingBarStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            app:grb_fill_color="@android:color/holo_green_dark"
+            app:grb_space="8dp"
+            app:grb_stepSize="0.1" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Width: wrap_content, Height: 30dp, Space: 8dp, Custom style (from theme and attribute)" />
+
+        <maestro123.good.ratingbar.GoodRatingBar
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:theme="@style/AppTheme.CustomBar" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Width: wrap_content, Height: 40dp, Space: 8dp, Custom style (from theme and attribute-> small), Padding: 8dp" />
+
+        <maestro123.good.ratingbar.GoodRatingBar
+            android:id="@+id/test"
+            style="?attr/goodRatingBarStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:theme="@style/AppTheme.CustomBar" />
+
+    </LinearLayout>
+
+</ScrollView>
